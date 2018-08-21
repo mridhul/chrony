@@ -40,4 +40,4 @@ RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
 COPY chrony.sh /usr/bin/
 
-ENTRYPOINT ["chrony.sh"]
+ENTRYPOINT ["/usr/bin/chrony.sh"]
