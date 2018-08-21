@@ -47,7 +47,7 @@ jobs:
           command: |
             docker build -t chrony:latest .
             docker images
-            docker run -dt --name chrony chrony:latest
+            docker run -dt --privileged -v /var/empty --restart=always --name chrony chrony:latest
             sleep 30s
             docker ps
             docker logs chrony
