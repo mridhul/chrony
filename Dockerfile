@@ -5,6 +5,6 @@ RUN apk add --no-cache \
 	coreutils \
 	chrony \
 	vim
-COPY chronyd.sh /usr/bin/
+COPY chrony.sh /usr/bin/
 
-ENTRYPOINT ["chronyd.sh"]
+ENTRYPOINT ["chrony.sh"]
