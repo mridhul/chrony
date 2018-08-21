@@ -48,4 +48,5 @@ jobs:
             docker build -t chrony:latest .
             docker images
             docker run -dt --name chrony chrony:latest
+            docker ps
             docker exec -it chrony date
