@@ -38,6 +38,6 @@ RUN apk add --no-cache --repository  http://dl-cdn.alpinelinux.org/alpine/edge/c
 
 RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
-COPY chronyd.sh /usr/bin/
+COPY chrony.sh /usr/bin/
 
-ENTRYPOINT ["chronyd.sh"]
+ENTRYPOINT ["chrony.sh"]
