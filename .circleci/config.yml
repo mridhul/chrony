@@ -52,3 +52,5 @@ jobs:
             docker ps
             docker logs chrony
             docker exec -it chrony date
+            docker exec -it chrony chronyc tracking
+            docker exec -it chrony chronyc sources
